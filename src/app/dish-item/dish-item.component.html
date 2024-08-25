@@ -1,0 +1,7 @@
+<div class="dish-item">
+  <h2 class="dish-name">{{ dish.name }}</h2>
+  <p class="dish-category">{{ dish.category }}</p>
+  <p class="dish-ingredients">Ingredients: {{ dish.ingredients.join(', ') }}</p>
+  <p class="dish-price">{{ dish.price | currency }}</p>
+  <img class="dish-image" [src]="dish.image" [alt]="dish.name" />
+</div>

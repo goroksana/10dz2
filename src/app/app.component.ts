@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DishListComponent } from './dish-list/dish-list.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  standalone: true, // Додайте цей рядок
+  imports: [DishListComponent] // Додаємо компонент
 })
 export class AppComponent {
   title = 'restaurant-menu';
